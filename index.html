@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kunal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="box">
+        <h1>Do you love me?</h1>
+        <button id="target">no</button>
+        <button onclick="alert('thank you so much love u too❤️')" id="yes">yes</button>   
+        </div>
+    </div> 
+    <script>
+    
+    
+     const target =document.getElementById('target');
+     function moveTarget() {
+        const maxWidth=400;
+        const maxHeight=400;
+
+        const randomx=Math.floor(Math.random() * maxWidth);
+        const randomy=Math.floor(Math.random() * maxHeight);
+
+        target.style.left= randomx + 'px';
+        target.style.top=randomy + 'px';
+        // console.log(target.style.left)
+        }
+        target.addEventListener('click',function(){
+            moveTarget();
+        }); 
+     
+    </script>
+    
+</body>
+</html>
